@@ -32,7 +32,7 @@ services:
     volumes:
       - ./loki-config/promtail.yaml:/etc/promtail/webapp-config.yaml
       - log-data:/var/log/webapp
-    command: -config.file=/etc/promtail/config.yaml
+    command: -config.file=/etc/promtail/webapp-config.yaml
     depends_on:
       - loki
 volumes:
